@@ -1318,4 +1318,8 @@ glowEyes.Stored["models/dpfilms/metropolice/playermodels/pm_tribal_police.mdl"] 
 glowEyes.Stored["models/dpfilms/metropolice/playermodels/pm_tron_police.mdl"] = glowEyes.Stored["models/dpfilms/metropolice/tron_police.mdl"]
 glowEyes.Stored["models/dpfilms/metropolice/playermodels/pm_tron_police_or.mdl"] = glowEyes.Stored["models/dpfilms/metropolice/tron_police.mdl"]
 
-glowEyes.Stored["models/dpfilms/metropolice/playermodels/pm_tron_police_or.mdl"]["serverThink"] = nil
+if ( glowEyes.Stored["models/dpfilms/metropolice/playermodels/pm_tron_police_or.mdl"] ) then
+    if ( glowEyes.Stored["models/dpfilms/metropolice/playermodels/pm_tron_police_or.mdl"].serverThink ) then
+        glowEyes.Stored["models/dpfilms/metropolice/playermodels/pm_tron_police_or.mdl"].serverThink = nil
+    end
+end
